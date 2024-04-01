@@ -1,0 +1,17 @@
+.animation-scroll{
+    animation-name: linear-scroll;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+}
+
+
+
+@keyframes linear-scroll {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}

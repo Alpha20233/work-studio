@@ -1,0 +1,15 @@
+<div>
+    <div id="loader" class="fixed  z-20 top-0 bg-black w-full h-screen">
+    </div>
+
+    <div id="vid"  class="w-full  h-screen fixed z-10 top-0">
+        <video [autoplay]="true" [muted]="true" [loop]="true" src="../assets/videos/video.mp4" class="w-full h-full object-cover"></video>
+    </div>
+
+    <div class="fixed top-0 z-5" >
+        <app-header></app-header>
+    </div>
+
+    <router-outlet ></router-outlet>
+    <app-footer></app-footer>
+</div>

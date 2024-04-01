@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family:'Light';
+    src: url(./assets/fonts/Freight_Big_Pro/Freight\ Big\ Pro\ Light.otf);
+}
+
+@font-face {
+    font-family:'Light italic';
+    src: url(./assets/fonts/Freight_Big_Pro/Freight\ Big\ Pro\ Light\ Italic.otf);
+}
+
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Light';
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    // background-color: black;
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+    display: none;
+    background-color:  #f3f3f3;
+}
+
+
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    border-radius: 10px;
+    background-color: rgb(220, 220, 220);
+}
+
+
+html.lenis {
+    height: auto
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden
+}
+
+.lenis.lenis-scrolling iframe {
+    pointer-events: none
+}
+
+.element p{
+    font-weight: 500 !important;
+    font-style: normal !important;
+    font-family:'Light' !important;
+}
